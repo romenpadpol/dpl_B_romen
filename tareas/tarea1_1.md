@@ -9,3 +9,7 @@
 # Luego tendremos que subir los cambios al respositorio para lo que usaremos....#
 # # git push # # 
 # Le daremos nuestro id y contraseña y guardaré ya los cambios en el respositorio #
+| Juan | https://github.com/zclut |
+| Aythami | https://github.com/Aythamiza|
+| Manuel |https://github.com/klasinky |
+| Cristo |https://github.com/CristoJGM2612 |
