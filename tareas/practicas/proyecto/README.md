@@ -1,5 +1,5 @@
 ![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/1.png)
-https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/2.png
+![image]https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/2.png
 https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/3.png
 https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/4.png
 
