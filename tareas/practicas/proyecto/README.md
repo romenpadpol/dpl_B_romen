@@ -1,7 +1,7 @@
 ![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/1.png)
-![image]https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/2.png
-https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/3.png
-https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/4.png
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/2.png)
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/3.png)
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/4.png)
 
 
 
@@ -13,8 +13,8 @@ El propósito de la misma es permitir la inclusión de otros archivos de configu
 La primera línea incluirá las directivas presentes en ports.conf. Dentro de este encontramos 
 la configuración de puertos. 
 
-https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/5.png
-https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/6.png
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/5.png)
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/6.png)
 
 
 
@@ -48,34 +48,33 @@ https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/i
 
 
 No existía el archivo 000-default.conf en el directorio ya que aún no habíamos realizado el comando a2ensite por lo tanto aún no se había creado. A2ensite es un script que habilita un sitio web especificado (que contiene un bloque VirtualHost) dentro de la configuración de apache2. Mediante la creación de enlaces simbólicos en / etc/apache2/sites-enabled.
-https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/7.png
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/7.png)
 
 
 ServerRoot 
-https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/8.png
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/8.png)
 La directiva ServerRoot especifica el directorio de nivel superior que tiene el contenido web. Por defecto, ServerRoot está configurado a "/etc/httpd" para servidores seguros y no seguros. 
 
 Timeout 
-https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/9.png
-
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/9.png)
 Timeout define, en segundos, el tiempo que el servidor esperará por recibir y transmitir durante la comunicación. Timeout está configurado por defecto a 300 segundos, lo cual es apropiado para la mayoría de las situaciones. 
 
 KeepAlive 
-https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/10.png
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/10.png)
 KeepAlive determina si el servidor permitirá más de una petición por conexión y se puede usar para prevenir a un cliente consumir demasiados recursos del servidor. 
 MaxKeepAliveRequests 
-https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/11.png
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/11.png)
 Esta directiva establece el número máximo de peticiones permitidas por cada conexión persistente. El Proyecto Apache recomienda un valor alto, lo que mejoraría el rendimiento del servidor. El valor predeterminado de MaxKeepAliveRequests es de 100 que debería bastar en la mayoría de los casos. 
 KeepAliveTimeout 
-https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/12.png
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/12.png)
 
 La directiva KeepAliveTimeout establece el número de segundos que el servidor esperará tras haber dado servicio a una petición, antes de cerrar la conexión. Una vez que el servidor recibe una petición, se aplica la directiva Timeout en su lugar. KeepAliveTimeout está configurado a 15 segundos por defecto. 
 User y Group 
-https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/13.png
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/13.png)
 La directiva User establece el nombre de usuario para el proceso del servidor y determina qué archivos puede accesar el servidor. Cualquier archivo que no esté accesible a este usuarip tampoco estará disponible para los clientes del Servidor Apache HTTP. 
 Especifica el nombre del grupo de los procesos Servidor Apache HTTP. 
 ErrorLog 
-https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/14.png
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/14.png)
 
 ErrorLog especifica el archivo donde se guardan los errores del servidor . Por defecto, esta directiva es configurada a /var/log/httpd/error_log. 
 
@@ -87,13 +86,12 @@ KeepAlive
 ¿Cuál es el fichero de errores?El registro de errores del servidor, cuyo nombre y ubicación se especifica en la directiva ErrorLog, es el más importante de todos los registros. Apache enviará cualquier información de diagnóstico y registrará cualquier error que encuentre al procesar peticiones al archivo de registro seleccionado. Es el primer lugar donde tiene que mirar cuando surja un problema al iniciar el servidor o durante su operación normal, porque con frecuencia encontrará en él información detallada de qué ha ido mal y cómo solucionar el problema . ¿Qué directiva lo define? Errorlog.
 
 Consulta el fichero /etc/apache2/ports.conf, y comprueba cuál es el puerto en el que escucha las peticiones Apache. En el 80 y en caso de habilitar el módulo en el 443. ¿En qué puerto escuchará también si se habilita el módulo modssl?. CAPTURA DE PANTALLA
-https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/15.png
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/15.png)
 
 
 
 Consulta el fichero /etc/apache2/sites-avalaible/000-default.conf observa y comenta la función de cada uno de los siguientes puntos:
-https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/16.png
-
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/16.png)
 
 
 Dentro de la directiva <VirtualHost>... </VirtualHost> se define el comportamiento del servidor virtual por defecto.
@@ -109,14 +107,14 @@ Consulta el fichero /etc/apache2/apache2.conf observa y comenta la función de c
 
 
 La directiva contenedora <Directory> .... </Directory> que se utiliza para determinar cómo Apache sirve el contenido del directorio/var/www.
-https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/17.png
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/17.png)
 
 La configuración de Apache se realiza a través de archivos de texto mediante directivas que permiten escoger las distintas opciones disponibles.
 
 Aunque las directivas son las mismas sea cual sea el sistema operativo, la localización de los archivos de configuración es diferente.
 
 Realiza una captura de ese fichero y señala en él la directiva que se sigue.
-https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/18.png
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/18.png)
 
 
 Options FollowSymLinks. es una directiva regla de los servidores http de Apache , la cual tiene la función de seguir los enlaces simbólicos de un directorio o carpeta. Si ponemos FollowSymLinks o +FollowSymLinks, lo afirmamos y permitimos que se sigan los enlaces simbólicos.
@@ -127,7 +125,7 @@ Require. proporciona una variedad de diferentes maneras de permitir o denegar el
 CONFIGURACIÓN BÁSICA DE APACHE 
 
 Vamos a crear dos archivos de configuración fp.conf que hará referencia a la web alojada en la ruta /var/www/fp/.
-https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/19.png
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/19.png)
 
 
 
@@ -147,68 +145,66 @@ Crear los siguientes directorios y archivos:
 
 
 
-https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/20.png
-https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/21.png
-https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/22.png
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/20.png)
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/21.png)
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/22.png)
 
 
 
 
 
 Luego realizamos un netplan apply para realizar la conexión con el cliente. 
-https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/23.png
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/23.png)
 
 
 
 Para esto tenemos que cambiar la configuración el archivo fp.conf que está en la ruta etc/apache2/sites-available y proceder a darle un Name y un Alias. 
-https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/24.png
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/24.png)
 
 
 Antes de lanzarnos a abrir nuestra página web por parte del cliente tenemos que acceder al archivo host en el cliente, y modificar este poniendo la ip de la cual vamos a hacer la petición y el nombre del host. Previamente de todo esto vamos a tener que tener activa la red interna y hacer un reload de apache server. 
-https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/25.png
-https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/26.png
-
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/25.png)
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/26.png)
 
 
 Ficheros a servir por defecto (Directory Index).
 
 
 Desde cliente_nombre abre un navegador y establece una conexión a http://10.70.XX.11
-https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/27.png
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/27.png)
 	
 
 No se ha solicitado ningún recurso en concreto por lo que el servidor ha enviado el index.html (valor en la directiva DirectoryIndex por defecto). CAPTURA DE PANTALLA
-https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/28.png
-https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/29.png
-
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/28.png)
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/29.png)
 
 Renombra el fichero /var/www/fp/index.html a /var/www/fp/indice.html
-https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/30.png
-https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/31.png
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/30.png)
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/31.png)
 
 
 
 Desde cliente_nombre abre un navegador y establece una conexión a http://10.70.XX.11. ¿Qué ocurre ahora? ¿Ha cambiado lo que envía el servidor?. CAPTURA DE PANTALLA
-https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/32.png
-https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/33.png
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/32.png)
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/33.png)
 
 
 
 Cambiamos el nombre de index.html a indice.html.
 Hacemos primero un reload de apache. Antes de esto hacemos un sudo a2ensite de fp. 
-https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/34.png
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/34.png)
 
 
 
 
 Edita el fichero /etc/apache2/apache2.conf y añade la siguiente directiva: DirectoryIndex listado.html en la la sección<Directory /var/www>. Explica que conseguimos al hacer esta modificación CAPTURA DE PANTALLA
-https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/35.png
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/35.png)
 
 Conseguimos crear un listado el cual incluye la carpeta ciclos y el indice.html. 
 
 Desde cliente_nombre abre un navegador y establece una conexión al servidor de nuevo. ¿Ha cambiado el fichero de carga?.CAPTURA DE PANTALLA
 
-https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/36.png
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/36.png)
 
 
 Páginas de error personalizadas.
@@ -216,14 +212,14 @@ Páginas de error personalizadas.
 Configura el servidor para que cuando retorne el código de error 404 (página no encontrada) envíe el texto Página no encontrada en el servidor.
 
 Para configurar esto solo debemos crear un archivo error en var/www/fp y enlazarlo en el archivo localized-error-pages.conf que se encuentra en /etc/apache2/conf-available
-https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/37.png
-https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/38.png
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/37.png)
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/38.png)
 
 
 
 
 Reinicia el servidor. Desde el cliente_nombre establece una conexión a http://www.fpdaw.org/noexiste.html y muestra qué te aparece en la pantalla.
-https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/39.png
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/39.png)
 
 
 
@@ -232,13 +228,13 @@ https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/i
 Redirecciones.
 
 Configura el servidor para que al entrar a http://www.fpdaw.org/ciclos haga una redirección automática hacia http://www.fpdaw.org/dam mostrando la página web correspondiente a DAM.
-https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/40.png
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/40.png)
 
 Alias.
 
 Crea un alias de forma que forma que al entrar en http://www.fpdaw.org/logosmuestre el contenido de los logotipos alojados en la ruta/home/usuarios/Documentos
 
-https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/41.png
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/41.png)
 
 Autenticación
 
@@ -247,17 +243,17 @@ alumnos :formado por alumno1 y alumno2
 profesores. formado por profesor1 y profesor2
 Los profesores deben poder acceder a todo el site, mientras que los alumnos tienen el acceso restringido a la carpeta /fp/ciclos/examenes.
 
-https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/42.png
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/42.png)
 
 
 Creamos las directivas.
-https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/43.png
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/43.png)
 
 Creamos los alumnos y profesores registrandolos en el fichero passwd.
-https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/44.png
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/44.png)
 
 Creamos el archivo grupos donde generamos los grupos. 
-https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/45.png
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/45.png)
 
 Le damos grupo a los usuarios y le damos solo permiso al grupo profesores. 
 
@@ -268,22 +264,22 @@ Configuración de HTTPS
 
 Configura el uso de HTTPS en el servidor web. Explica detalladamente todo el proceso aportando capturas de pantalla.
 
-https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/46.png
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/46.png)
 
 
 Vamos primero al archivo de configuración de apache y añadimos la última directiva.
 
 Creamos la clave privada y el certificado mediante openssl
-https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/47.png
-https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/48.png
-https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/49.png
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/47.png)
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/48.png)
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/49.png)
 
 
 
 Configuramos el archivo de configuración por defecto de sites enabled y en él introducimos todo lo referente al ssl certificado. 
 Para redirigir a los usuarios HTTP a la versión HTTPS de su sitio web.
 
-https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/50.png
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/50.png)
 Redirecciona todo el tráfico HTTP hacia HTTPS, de forma que al conectar con http://www.fpdaw.org nos redireccione hacia https://www.fpdaw.org.
 
 
