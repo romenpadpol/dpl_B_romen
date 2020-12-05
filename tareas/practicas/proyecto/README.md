@@ -228,13 +228,15 @@ Reinicia el servidor. Desde el cliente_nombre establece una conexión a http://w
 Redirecciones.
 
 Configura el servidor para que al entrar a http://www.fpdaw.org/ciclos haga una redirección automática hacia http://www.fpdaw.org/dam mostrando la página web correspondiente a DAM.
-![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/40.png)
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/51.png)
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/52.png)
 
 Alias.
 
 Crea un alias de forma que forma que al entrar en http://www.fpdaw.org/logosmuestre el contenido de los logotipos alojados en la ruta/home/usuarios/Documentos
 
-![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/41.png)
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/53.png)
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/54.png)
 
 Autenticación
 
@@ -242,20 +244,29 @@ Configura el servidor creando dos grupos de usuarios suiguientes: +
 alumnos :formado por alumno1 y alumno2 
 profesores. formado por profesor1 y profesor2
 Los profesores deben poder acceder a todo el site, mientras que los alumnos tienen el acceso restringido a la carpeta /fp/ciclos/examenes.
+Creamos la directiva.
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/lodedirect.png)
 
-![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/42.png)
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/55.png)
+
+Luego realizamos el a2enmod de authz_groupfile
+
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/56.png)
+
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/57.png)
+
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/58.png)
 
 
-Creamos las directivas.
-![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/43.png)
+
 
 Creamos los alumnos y profesores registrandolos en el fichero passwd.
 ![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/44.png)
 
 Creamos el archivo grupos donde generamos los grupos. 
-![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/45.png)
 
-Le damos grupo a los usuarios y le damos solo permiso al grupo profesores. 
+
+Le damos grupo a los usuarios y le damos solo permiso al grupo profesores en la directiva. 
 
 
 
@@ -264,22 +275,26 @@ Configuración de HTTPS
 
 Configura el uso de HTTPS en el servidor web. Explica detalladamente todo el proceso aportando capturas de pantalla.
 
-![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/46.png)
+Primero procedemos a instalar certbot
 
 
-Vamos primero al archivo de configuración de apache y añadimos la última directiva.
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/59.png)
 
-Creamos la clave privada y el certificado mediante openssl
-![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/47.png)
-![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/48.png)
-![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/49.png)
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/60.png)
+
+En el caso que falte el plugin de apache tendremos que ejecutar sudo apt-get install python-certbot-apache -y
+
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/61.png)
+
+![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/62.png)
 
 
 
-Configuramos el archivo de configuración por defecto de sites enabled y en él introducimos todo lo referente al ssl certificado. 
-Para redirigir a los usuarios HTTP a la versión HTTPS de su sitio web.
 
-![image](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/proyecto/imagenes/50.png)
-Redirecciona todo el tráfico HTTP hacia HTTPS, de forma que al conectar con http://www.fpdaw.org nos redireccione hacia https://www.fpdaw.org.
+
+
+
+
+
 
 
