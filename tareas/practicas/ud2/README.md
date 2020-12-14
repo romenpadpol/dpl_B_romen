@@ -1,4 +1,4 @@
-![imagen]https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/ud2/imagenes/1.png
+![imagen](https://github.com/romentoss/dpl_B_romen/blob/master/tareas/practicas/ud2/imagenes/1.png)
 ![imagen](https://raw.githubusercontent.com/romentoss/dpl_B_romen/master/tareas/practicas/ud2/imagenes/1.png)
 Para comenzar vamos al panel de control.
 ![imagen](https://raw.githubusercontent.com/romentoss/dpl_B_romen/master/tareas/practicas/ud2/imagenes/2.png)
